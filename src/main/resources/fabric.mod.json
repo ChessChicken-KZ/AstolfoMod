@@ -1,0 +1,34 @@
+{
+  "schemaVersion": 1,
+  "id": "astolfomod",
+  "version": "${version}",
+
+  "name": "Astolfo MOD",
+  "description": "ASTOLFO MODDD!!1!11",
+  "authors": [
+    "ChessChicken"
+  ],
+  "contact": {
+    "homepage": "https://github.com/ChessChicken-KZ/AstolfoMod",
+    "issues": "https://github.com/ChessChicken-Ru/AstolfoMod/issues",
+    "sources": "https://github.com/ChessChicken-Ru/AstolfoMod"
+  },
+
+  "license": "MIT",
+  "icon": "assets/astolfomod/icon.png",
+
+  "entrypoints": {
+    "stationmod": [
+      "kz.chesschicken.astolfomod.AstolfoMod"
+    ]
+  },
+
+  "depends": {
+    "fabricloader": "*",
+    "minecraft": "1.0.0-beta.7.3",
+    "stationloader":"*"
+  },
+  "suggests": {
+    "flamingo": "*"
+  }
+}
