@@ -3,10 +3,10 @@
   "id": "astolfomod",
   "version": "${version}",
 
-  "name": "Astolfo MOD",
+  "name": "Astolfo Mod",
   "description": "ASTOLFO MODDD!!1!11",
   "authors": [
-    "ChessChicken"
+    "ChessChicken-KZ"
   ],
   "contact": {
     "homepage": "https://github.com/ChessChicken-KZ/AstolfoMod",
@@ -18,17 +18,14 @@
   "icon": "assets/astolfomod/icon.png",
 
   "entrypoints": {
-    "stationmod": [
-      "kz.chesschicken.astolfomod.AstolfoMod"
+    "stationapi:event_bus": [
+      "kz.chesschicken.astolfomod.AstolfoListener"
     ]
   },
 
   "depends": {
     "fabricloader": "*",
     "minecraft": "1.0.0-beta.7.3",
-    "stationloader":"*"
-  },
-  "suggests": {
-    "flamingo": "*"
+    "stationapi":"*"
   }
 }
