@@ -11,7 +11,7 @@ public class ArmorAstolfo extends TemplateArmour implements ArmorTextureProvider
 
     public ArmorAstolfo(Identifier id, int slot, int armorType) {
         super(id, 3, 3, slot);
-        this.setDurability(BASE_DURABILITY[slot] * 3 << 3);
+        this.setDurability(BASE_DURABILITY[slot] * (4 + (armorType * -1)) << 3);
         this.maxStackSize = 1;
         this.type = armorType;
     }

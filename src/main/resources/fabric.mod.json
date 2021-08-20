@@ -4,7 +4,7 @@
   "version": "${version}",
 
   "name": "Astolfo Mod",
-  "description": "ASTOLFO MODDD!!1!11",
+  "description": "A pochemy bi i net?",
   "authors": [
     "ChessChicken-KZ"
   ],
@@ -22,6 +22,10 @@
       "kz.chesschicken.astolfomod.AstolfoListener"
     ]
   },
+
+  "mixins": [
+    "astolfomod.mixins.json"
+  ],
 
   "depends": {
     "fabricloader": "*",
