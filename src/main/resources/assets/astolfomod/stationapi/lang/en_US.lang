@@ -1,7 +1,7 @@
-item.astolfo_helmet.name=Astolfo Helmet Armored
-item.astolfo_chestplate.name=Astolfo Chestplate Armored
-item.astolfo_leggings.name=Astolfo Leggings Armored
-item.astolfo_boots.name=Astolfo Boots Armored
+item.astolfo_helmet.name=Astolfo Armored Helmet
+item.astolfo_chestplate.name=Astolfo Armored Chestplate
+item.astolfo_leggings.name=Astolfo Armored Leggings
+item.astolfo_boots.name=Astolfo Armored Boots
 
 item.astolfo_light_helmet.name=Astolfo Lightweight Helmet
 item.astolfo_light_chestplate.name=Astolfo Lightweight Chestplate

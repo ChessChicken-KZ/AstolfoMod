@@ -2,13 +2,11 @@ package kz.chesschicken.astolfomod;
 
 import kz.chesschicken.astolfomod.item.ArmorAstolfo;
 import net.mine_diver.unsafeevents.listener.EventListener;
-import net.minecraft.item.ItemBase;
 import net.modificationstation.stationapi.api.client.event.texture.TextureRegisterEvent;
 import net.modificationstation.stationapi.api.event.registry.ItemRegistryEvent;
 import net.modificationstation.stationapi.api.mod.entrypoint.Entrypoint;
 import net.modificationstation.stationapi.api.registry.Identifier;
 import net.modificationstation.stationapi.api.registry.ModID;
-import net.modificationstation.stationapi.api.template.item.TemplateItemBase;
 import net.modificationstation.stationapi.api.template.item.armour.TemplateArmour;
 import net.modificationstation.stationapi.api.util.Null;
 
@@ -43,13 +41,13 @@ public class AstolfoListener {
     @EventListener
     public void registerTextures(TextureRegisterEvent event)
     {
-        astolfo_helmet.setTexture("/assets/astolfomod/textures/item/astolfoArmored_helmet.png");
-        astolfo_chestplate.setTexture("/assets/astolfomod/textures/item/astolfoArmored_chestplate.png");
-        astolfo_leggings.setTexture("/assets/astolfomod/textures/item/astolfoArmored_leggings.png");
-        astolfo_boots.setTexture("/assets/astolfomod/textures/item/astolfoArmored_boots.png");
-        astolfo_light_helmet.setTexture("/assets/astolfomod/textures/item/astolfoArmored_helmet.png");
-        astolfo_light_chestplate.setTexture("/assets/astolfomod/textures/item/astolfoArmored_chestplate.png");
-        astolfo_light_leggings.setTexture("/assets/astolfomod/textures/item/astolfoArmored_leggings.png");
-        astolfo_light_boots.setTexture("/assets/astolfomod/textures/item/astolfoArmored_boots.png");
+        astolfo_helmet.setTexture("/assets/astolfomod/textures/item/astolfo_armored_helmet.png");
+        astolfo_chestplate.setTexture("/assets/astolfomod/textures/item/astolfo_armored_chestplate.png");
+        astolfo_leggings.setTexture("/assets/astolfomod/textures/item/astolfo_armored_leggings.png");
+        astolfo_boots.setTexture("/assets/astolfomod/textures/item/astolfo_armored_boots.png");
+        astolfo_light_helmet.setTexture("/assets/astolfomod/textures/item/astolfo_lightweight_helmet.png");
+        astolfo_light_chestplate.setTexture("/assets/astolfomod/textures/item/astolfo_lightweight_chestplate.png");
+        astolfo_light_leggings.setTexture("/assets/astolfomod/textures/item/astolfo_lightweight_leggings.png");
+        astolfo_light_boots.setTexture("/assets/astolfomod/textures/item/astolfo_lightweight_boots.png");
     }
 }

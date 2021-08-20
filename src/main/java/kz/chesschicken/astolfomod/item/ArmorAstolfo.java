@@ -21,9 +21,9 @@ public class ArmorAstolfo extends TemplateArmour implements ArmorTextureProvider
         switch (type)
         {
             case 0:
-                return "/assets/astolfomod/textures/armor/astolfo_armored.png";
+                return "/assets/astolfomod/textures/armor/astolfo_armored_2.png";
             case 1:
-                return "/assets/astolfomod/textures/armor/astolfo_lightweight.png";
+                return "/assets/astolfomod/textures/armor/astolfo_lightweight_2.png";
             default:
                 return null;
         }
@@ -34,9 +34,9 @@ public class ArmorAstolfo extends TemplateArmour implements ArmorTextureProvider
         switch (type)
         {
             case 0:
-                return "/assets/astolfomod/textures/armor/astolfo_armored.png";
+                return "/assets/astolfomod/textures/armor/astolfo_armored_1.png";
             case 1:
-                return "/assets/astolfomod/textures/armor/astolfo_lightweight.png";
+                return "/assets/astolfomod/textures/armor/astolfo_lightweight_1.png";
             default:
                 return null;
         }
