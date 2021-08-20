@@ -15,11 +15,6 @@ import java.util.stream.Stream;
 public class GuiSmallPage extends ScreenBase {
     private List<String> stringList;
 
-    public GuiSmallPage()
-    {
-        readTxt(0);
-    }
-
     public GuiSmallPage(int i)
     {
         readTxt(i);
