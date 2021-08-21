@@ -24,7 +24,7 @@ public class GuiSmallPage extends ScreenBase {
     private void readTxt(int i)
     {
         stringList = new ArrayList<>();
-        Stream<String> stringStream = Files.lines(Paths.get(AstolfoListener.modID.getContainer().getRootPath() + "/assets/astolfomod/pages/" + i + ".txt"));
+        Stream<String> stringStream = Files.lines(Paths.get(AstolfoListener.modID.getContainer().getRootPath() + "/assets/astolfomod/pages/page" + i + ".txt"));
         stringStream.forEach(s -> stringList.add(s));
         stringStream.close();
     }
