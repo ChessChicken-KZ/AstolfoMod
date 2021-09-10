@@ -15,20 +15,18 @@ import java.util.stream.Stream;
 public class GuiSmallPage extends ScreenBase {
     private List<String> stringList;
 
-    public GuiSmallPage(int i)
-    {
-        readTxt(i);
+    public GuiSmallPage(int i) {
+        readTextFile(i);
     }
 
     @SneakyThrows
-    private void readTxt(int i)
+    private void readTextFile(int i)
     {
         stringList = new ArrayList<>();
         Stream<String> stringStream = Files.lines(Paths.get(AstolfoListener.modID.getContainer().getRootPath() + "/assets/astolfomod/pages/page" + i + ".txt"));
         stringStream.forEach(s -> stringList.add(s));
         stringStream.close();
     }
-
 
     @Override
     public void init() {
@@ -47,7 +45,7 @@ public class GuiSmallPage extends ScreenBase {
 
 
         for(int i = 0; i < stringList.size(); i++) {
-            this.textManager.drawText((!stringList.get(i).startsWith("§") ? "§0" : "") + stringList.get(i), w + 4, h + (10 * (i + 1)), Color.white.getRGB());
+            this.textManager.drawText((stringList.get(i).startsWith("§") ? "" : "§0") + stringList.get(i), w + 4, h + (10 * (i + 1)), Color.white.getRGB());
         }
 
         super.render(mouseX, mouseY, delta);

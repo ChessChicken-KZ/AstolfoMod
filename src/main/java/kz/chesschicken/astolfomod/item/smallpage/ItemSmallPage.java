@@ -21,8 +21,7 @@ public class ItemSmallPage extends TemplateItemBase {
 
     @Override
     public ItemInstance use(ItemInstance item, Level level, PlayerBase player) {
-        if(FabricLoader.getInstance().getEnvironmentType() == EnvType.CLIENT)
-        {
+        if(FabricLoader.getInstance().getEnvironmentType() == EnvType.CLIENT) {
             ((net.minecraft.client.Minecraft)FabricLoader.getInstance().getGameInstance()).openScreen(new kz.chesschicken.astolfomod.item.smallpage.GuiSmallPage(item.getDamage()));
         }
         return item;

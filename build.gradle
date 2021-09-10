@@ -42,7 +42,6 @@ repositories {
 	mavenLocal()
 	gradlePluginPortal()
 	mavenCentral()
-	jcenter()
 	maven {
 		name = "Jitpack"
 		url 'https://jitpack.io/'
