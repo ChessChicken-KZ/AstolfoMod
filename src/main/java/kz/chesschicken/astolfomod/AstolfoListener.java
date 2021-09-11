@@ -33,9 +33,6 @@ public class AstolfoListener {
     public static TemplateItemBase astolfo_trapdoor;
     public static TemplateItemBase astolfo_gem;
 
-    public static int textureTRAPdoor;
-    public static int textureTRAPgem;
-
     @Entrypoint.ModID
     public static ModID modID = Null.get();
 
