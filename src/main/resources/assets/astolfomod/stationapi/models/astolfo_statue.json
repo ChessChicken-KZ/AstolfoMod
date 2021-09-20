@@ -1,24 +1,10 @@
 {
 	"credit": "Made with Blockbench",
 	"textures": {
-		"0": "astolfomod:astolfo_maid",
-		"1": "astolfomod:base_statue",
-		"particle": "astolfomod:astolfo_maid"
+		"0": "stationapi:astolfo_maid",
+		"particle": "stationapi:astolfo_maid"
 	},
 	"elements": [
-		{
-			"name": "stand",
-			"from": [0, 0, 0],
-			"to": [16, 1, 16],
-			"faces": {
-				"north": {"uv": [0, 0, 16, 1], "texture": "#1"},
-				"east": {"uv": [0, 0, 16, 1], "texture": "#1"},
-				"south": {"uv": [0, 0, 16, 1], "texture": "#1"},
-				"west": {"uv": [0, 0, 16, 1], "texture": "#1"},
-				"up": {"uv": [0, 0, 16, 16], "texture": "#1"},
-				"down": {"uv": [16, 16, 0, 0], "texture": "#1"}
-			}
-		},
 		{
 			"name": "head",
 			"from": [4, 24, -6],
@@ -192,8 +178,11 @@
 		"ground": {
 			"scale": [0.2, 0.2, 0.2]
 		},
+		"gui": {
+			"rotation": [0, -180, 0]
+		},
 		"head": {
-			"translation": [0, 19, 0],
+			"translation": [0, 18, 0],
 			"scale": [1.6, 1.6, 1.6]
 		}
 	},
@@ -204,46 +193,40 @@
 			"color": 0,
 			"children": [
 				{
-					"name": "base",
-					"origin": [0, 0, 0],
-					"color": 0,
-					"children": [0]
-				},
-				{
 					"name": "g_head",
 					"origin": [8, 8, 8],
 					"color": 0,
-					"children": [1, 2]
+					"children": [0, 1]
 				},
 				{
 					"name": "g_body",
 					"origin": [8, 8, 8],
 					"color": 0,
-					"children": [3, 4]
+					"children": [2, 3]
 				},
 				{
 					"name": "g_left_arm",
 					"origin": [8, 8, 8],
 					"color": 0,
-					"children": [5, 6]
+					"children": [4, 5]
 				},
 				{
 					"name": "g_right_arm",
 					"origin": [8, 8, 8],
 					"color": 0,
-					"children": [7, 8]
+					"children": [6, 7]
 				},
 				{
 					"name": "g_left_leg",
 					"origin": [8, 8, 8],
 					"color": 0,
-					"children": [9, 10]
+					"children": [8, 9]
 				},
 				{
 					"name": "g_right_leg",
 					"origin": [8, 8, 8],
 					"color": 0,
-					"children": [11, 12]
+					"children": [10, 11]
 				}
 			]
 		}
