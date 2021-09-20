@@ -10,6 +10,7 @@ import net.minecraft.block.BlockBase;
 import net.minecraft.item.ItemBase;
 import net.minecraft.item.ItemInstance;
 import net.modificationstation.stationapi.api.client.event.texture.TextureRegisterEvent;
+import net.modificationstation.stationapi.api.client.model.JsonModel;
 import net.modificationstation.stationapi.api.event.entity.player.PlayerEvent;
 import net.modificationstation.stationapi.api.event.recipe.RecipeRegisterEvent;
 import net.modificationstation.stationapi.api.event.registry.BlockRegistryEvent;
@@ -38,6 +39,8 @@ public class AstolfoListener {
     public static TemplateItemBase astolfo_gem;
 
     public static TemplateBlockBase astolfo_statue;
+    
+    public static JsonModel astolfoStatue;
 
     @Entrypoint.ModID
     public static ModID modID = Null.get();
@@ -81,6 +84,8 @@ public class AstolfoListener {
         astolfo_page.setTexture("/assets/astolfomod/textures/item/astolfo_paper.png");
         astolfo_trapdoor.setTexture("/assets/astolfomod/textures/item/astolfo_trapdoor.png");
         astolfo_gem.setTexture("/assets/astolfomod/textures/item/astolfo_gem.png");
+        
+        astolfoStatue = new JsonModel(Identifier.of(modID, "astolfo_statue"));
     }
 
     @SuppressWarnings({"unused", "UnnecessaryBoxing"})
