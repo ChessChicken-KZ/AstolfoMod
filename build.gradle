@@ -6,14 +6,13 @@ buildscript {
 		}
 		gradlePluginPortal()
 		mavenCentral()
-		jcenter()
 		maven {
 			name = "Jitpack"
 			url 'https://jitpack.io/'
 		}
 	}
 	dependencies {
-		classpath 'com.github.Chocohead:Fabric-Loom:9b38aba'
+		classpath 'com.github.Chocohead:Fabric-Loom:0d0261a'
 	}
 }
 
@@ -43,12 +42,7 @@ repositories {
 	gradlePluginPortal()
 	mavenCentral()
 	maven {
-		name = "Jitpack"
-		url 'https://jitpack.io/'
-	}
-	maven {
-		name = "Glass"
-		url "https://maven.glass-launcher.net/repo/"
+		url 'https://jitpack.io'
 	}
 }
 

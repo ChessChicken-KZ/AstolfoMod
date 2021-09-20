@@ -24,7 +24,8 @@ public abstract class MixinChicken extends AnimalBase {
                             ((PlayerBase)arg).inventory.getHeldItem().getDamage() == 0)
             {
                 ((PlayerBase)arg).inventory.getHeldItem().applyDamage(1, arg);
-                this.dropItem(new ItemInstance(AstolfoListener.astolfo_trapdoor, 1, 1), 1);
+                if(rand.nextBoolean())
+                    this.dropItem(new ItemInstance(AstolfoListener.astolfo_gem, 1), 1);
             }
         }
         super.onKilledBy(arg);

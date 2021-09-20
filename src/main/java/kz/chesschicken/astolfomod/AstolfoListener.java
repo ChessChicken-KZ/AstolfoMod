@@ -1,6 +1,8 @@
 package kz.chesschicken.astolfomod;
 
+import kz.chesschicken.astolfomod.block.AstolfoStatue;
 import kz.chesschicken.astolfomod.item.ArmorAstolfo;
+import kz.chesschicken.astolfomod.item.AstolfoTrapdoor;
 import kz.chesschicken.astolfomod.item.smallpage.ItemSmallPage;
 import kz.chesschicken.astolfomod.player.SoundPlayerHandler;
 import net.mine_diver.unsafeevents.listener.EventListener;
@@ -10,11 +12,13 @@ import net.minecraft.item.ItemInstance;
 import net.modificationstation.stationapi.api.client.event.texture.TextureRegisterEvent;
 import net.modificationstation.stationapi.api.event.entity.player.PlayerEvent;
 import net.modificationstation.stationapi.api.event.recipe.RecipeRegisterEvent;
+import net.modificationstation.stationapi.api.event.registry.BlockRegistryEvent;
 import net.modificationstation.stationapi.api.event.registry.ItemRegistryEvent;
 import net.modificationstation.stationapi.api.mod.entrypoint.Entrypoint;
 import net.modificationstation.stationapi.api.recipe.CraftingRegistry;
 import net.modificationstation.stationapi.api.registry.Identifier;
 import net.modificationstation.stationapi.api.registry.ModID;
+import net.modificationstation.stationapi.api.template.block.TemplateBlockBase;
 import net.modificationstation.stationapi.api.template.item.TemplateItemBase;
 import net.modificationstation.stationapi.api.template.item.armour.TemplateArmour;
 import net.modificationstation.stationapi.api.util.Null;
@@ -33,8 +37,16 @@ public class AstolfoListener {
     public static TemplateItemBase astolfo_trapdoor;
     public static TemplateItemBase astolfo_gem;
 
+    public static TemplateBlockBase astolfo_statue;
+
     @Entrypoint.ModID
     public static ModID modID = Null.get();
+
+    @SuppressWarnings("unused")
+    @EventListener
+    public void registerBlocks(BlockRegistryEvent event) {
+        astolfo_statue = new AstolfoStatue(Identifier.of(modID, "astolfo_statue")).setTranslationKey(modID, "astolfo_statue");
+    }
 
     @SuppressWarnings("unused")
     @EventListener
@@ -49,7 +61,7 @@ public class AstolfoListener {
         astolfo_light_leggings = new ArmorAstolfo(Identifier.of(modID, "astolfo_light_leggings"),  2, 1).setTranslationKey(modID, "astolfo_light_leggings");
         astolfo_light_boots = new ArmorAstolfo(Identifier.of(modID, "astolfo_light_boots"),  3, 1).setTranslationKey(modID, "astolfo_light_boots");
         astolfo_page = new ItemSmallPage(Identifier.of(modID, "page")).setTranslationKey(modID, "page");
-        astolfo_trapdoor = new TemplateItemBase(Identifier.of(modID, "trap_door")).setDurability(40).setTranslationKey(modID, "trap_door");
+        astolfo_trapdoor = new AstolfoTrapdoor(Identifier.of(modID, "trap_door")).setDurability(40).setTranslationKey(modID, "trap_door");
         astolfo_gem = new TemplateItemBase(Identifier.of(modID, "trap_gem")).setTranslationKey(modID, "trap_gem");
     }
 
@@ -71,7 +83,7 @@ public class AstolfoListener {
         astolfo_gem.setTexture("/assets/astolfomod/textures/item/astolfo_gem.png");
     }
 
-    @SuppressWarnings("unused")
+    @SuppressWarnings({"unused", "UnnecessaryBoxing"})
     @EventListener
     public void registerRecipes(RecipeRegisterEvent event)
     {
