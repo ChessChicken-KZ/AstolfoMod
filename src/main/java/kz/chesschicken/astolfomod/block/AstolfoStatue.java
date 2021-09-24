@@ -15,6 +15,9 @@ public class AstolfoStatue extends TemplateBlockBase implements BlockWorldModelP
     public AstolfoStatue(Identifier identifier) {
         super(identifier, Material.STONE);
         this.setBoundingBox(0.0F, 0.0F, 0.0F, 1.0F, 2.0F, 1.0F);
+        this.setHardness(1.5F);
+        this.setBlastResistance(10.0F);
+        this.setSounds(PISTON_SOUNDS);
     }
 
     @Override
@@ -36,8 +39,5 @@ public class AstolfoStatue extends TemplateBlockBase implements BlockWorldModelP
     public JsonModel getInventoryModel(int i) {
         return AstolfoListener.astolfoStatue;
     }
-    
-    
-
   
 }

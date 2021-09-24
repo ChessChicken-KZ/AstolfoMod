@@ -18,6 +18,7 @@ public class SoundPlayerHandler implements PlayerHandler {
     {
         this.playerBase = player;
     }
+    
 
     @Override
     public String getHurtSound(String previous) {

@@ -1,8 +1,8 @@
 {
 	"credit": "Made with Blockbench",
 	"textures": {
-		"0": "stationapi:astolfo_maid",
-		"particle": "stationapi:astolfo_maid"
+		"0": "astolfomod:astolfo_maid",
+		"particle": "astolfomod:astolfo_maid"
 	},
 	"elements": [
 		{
