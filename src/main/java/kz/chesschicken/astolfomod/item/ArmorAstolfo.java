@@ -18,8 +18,7 @@ public class ArmorAstolfo extends TemplateArmour implements ArmorTextureProvider
 
     @Override
     public String getChestplateModelTexture(ItemInstance itemInstance) {
-        switch (type)
-        {
+        switch (type) {
             case 0:
                 return "/assets/astolfomod/textures/armor/astolfo_armored_2.png";
             case 1:
@@ -31,8 +30,7 @@ public class ArmorAstolfo extends TemplateArmour implements ArmorTextureProvider
 
     @Override
     public String getOtherModelTexture(ItemInstance itemInstance) {
-        switch (type)
-        {
+        switch (type) {
             case 0:
                 return "/assets/astolfomod/textures/armor/astolfo_armored_1.png";
             case 1:

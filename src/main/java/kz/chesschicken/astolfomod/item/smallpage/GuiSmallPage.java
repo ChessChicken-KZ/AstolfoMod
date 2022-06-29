@@ -33,6 +33,7 @@ public class GuiSmallPage extends ScreenBase {
         this.buttons.clear();
     }
 
+    @Override
     public void render(int mouseX, int mouseY, float delta) {
         this.renderBackground();
         final int w = this.width / 2 - 128;

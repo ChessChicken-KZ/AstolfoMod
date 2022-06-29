@@ -1,6 +1,5 @@
 package kz.chesschicken.astolfomod.item;
 
-import net.minecraft.block.Plant;
 import net.minecraft.item.ItemInstance;
 import net.modificationstation.stationapi.api.client.gui.CustomTooltipProvider;
 import net.modificationstation.stationapi.api.registry.Identifier;
