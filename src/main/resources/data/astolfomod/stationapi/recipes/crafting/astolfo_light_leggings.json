@@ -1,0 +1,30 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern":
+  [
+    "XHX",
+    "WHW",
+    "HWH"
+  ],
+  "key":
+  {
+    "X":
+    {
+      "item": "minecraft:dye",
+      "damage": 9
+    },
+    "W":
+    {
+      "item": "minecraft:wool"
+    },
+    "H":
+    {
+      "item": "astolfomod:trap_gem"
+    }
+  },
+  "result":
+  {
+    "item": "astolfomod:astolfo_light_leggings",
+    "count": 1
+  }
+}

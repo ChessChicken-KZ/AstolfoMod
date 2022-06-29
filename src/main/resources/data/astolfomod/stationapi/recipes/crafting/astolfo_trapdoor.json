@@ -1,0 +1,38 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern":
+  [
+    "XXX",
+    "UWU",
+    "HSH"
+  ],
+  "key":
+  {
+    "X":
+    {
+      "item": "minecraft:dye",
+      "damage": 9
+    },
+    "U":
+    {
+      "item": "minecraft:diamond"
+    },
+    "W":
+    {
+      "item": "minecraft:trapdoor"
+    },
+    "H":
+    {
+      "item": "minecraft:iron_ingot"
+    },
+    "S":
+    {
+      "item": "minecraft:bed"
+    }
+  },
+  "result":
+  {
+    "item": "astolfomod:trap_door",
+    "count": 1
+  }
+}

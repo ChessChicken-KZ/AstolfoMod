@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern":
+  [
+    "XXX",
+    "XWX",
+    "XXX"
+  ],
+  "key":
+  {
+    "X":
+    {
+      "item": "astolfomod:trap_gem"
+    },
+    "W":
+    {
+      "item": "minecraft:iron_chestplate"
+    }
+  },
+  "result":
+  {
+    "item": "astolfomod:astolfo_chestplate",
+    "count": 1
+  }
+}

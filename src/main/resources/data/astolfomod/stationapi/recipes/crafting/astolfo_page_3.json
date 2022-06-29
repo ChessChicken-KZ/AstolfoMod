@@ -1,0 +1,26 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern":
+  [
+    "XXX",
+    "XWX",
+    "XXX"
+  ],
+  "key":
+  {
+    "X":
+    {
+      "item": "minecraft:flint"
+    },
+    "W":
+    {
+      "item": "minecraft:paper"
+    }
+  },
+  "result":
+  {
+    "item": "astolfomod:page",
+    "damage": 3,
+    "count": 1
+  }
+}
