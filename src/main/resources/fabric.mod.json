@@ -19,7 +19,7 @@
 
   "entrypoints": {
     "stationapi:event_bus": [
-      "kz.chesschicken.astolfomod.AstolfoListener"
+      "kz.chesschicken.astolfomod.ModListener"
     ]
   },
 

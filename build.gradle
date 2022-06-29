@@ -39,6 +39,17 @@ repositories {
 	mavenCentral()
 }
 
+sourceSets {
+	main {
+		scala {
+			srcDirs = ['src/main/scala', 'src/main/java']
+		}
+		java {
+			srcDirs = []
+		}
+	}
+}
+
 dependencies {
 	minecraft "com.mojang:minecraft:${project.minecraft_version}"
 	mappings "net.glasslauncher:bin:${project.yarn_mappings}"
@@ -53,8 +64,13 @@ dependencies {
 	/* CursedFabricScala */
 	modImplementation 'com.github.ChessChicken-KZ:CursedFabricScala:0.2-3.1.3'
 
-	/* HowManyItems - NEI or TMI, but for cursed-fabric. */
-	modImplementation('com.github.calmilamsy:HowManyItems-Fabric-Unofficial:6af40ed18d') {
+	modImplementation("com.github.calmilamsy:ModMenu:${project.modmenu_version}") {
+		transitive false
+	}
+	modImplementation("com.github.calmilamsy:glass-config-api:${project.gcapi_version}") {
+		transitive false
+	}
+	modImplementation("net.glasslauncher:HowManyItems-Fabric-Unofficial:${project.howmanyitems_version}") {
 		transitive false
 	}
 }
